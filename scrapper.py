@@ -27,26 +27,31 @@ def fetch_Competitors_Data():
     browser = webdriver.Chrome(chromepath)
     browser.get(url_to_scrap)
 
-    #Browser need to be fully loaded
+    # Browser need to be fully loaded
     time.sleep(20)
 
-    #soup instance to get page source
+    # soup instance to get page source
     soup = BeautifulSoup(browser.page_source,features="html.parser")
     
-    #!important - After getting the data close browser  
+    # !important - After getting the data close browser  
     browser.close()
 
-    #finding required data from soup instance that we have created
-    soup = soup.find('div',{'class':'bc-datatable'})
-    compSymbol = soup.findAll('a',{'data-ng-class':'setTriggeredClass(row)'}) 
-    compName = soup.findAll('td',{'class':'symbolName text-left'})
-
     data = {}
-    #traversing from all data that we collected
-    for i in range(0,len(compSymbol)):
-        Symbol = compSymbol[i].get_text()
-        Name = compName[i].find('span',{'data-ng-bind':'cell'}).get_text()
-        data[Symbol] = Name
+
+    # Handling Time - out exception
+    try:
+        # finding required data from soup instance that we have created
+        soup = soup.find('div',{'class':'bc-datatable'})
+        compSymbol = soup.findAll('a',{'data-ng-class':'setTriggeredClass(row)'}) 
+        compName = soup.findAll('td',{'class':'symbolName text-left'})
+    
+        # traversing from all data that we collected
+        for i in range(0,len(compSymbol)):
+            Symbol = compSymbol[i].get_text()
+            Name = compName[i].find('span',{'data-ng-bind':'cell'}).get_text()
+            data[Symbol] = Name
+    except:
+        print("Taking to much to respond...")
 
     return data
 
