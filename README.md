@@ -15,7 +15,7 @@ For python3<br/>
 
 ### Step-2:
 Download chrome-driver v83 from [here](https://chromedriver.storage.googleapis.com/index.html?path=83.0.4103.39/)<br/>
-(Although chrome-driver is already is in a repository(For Linux))
+(Although chrome-driver is already in a repository(For Linux))
 
 If you are using windows to perform the task.<br/>
 After downloading chrome-driver paste it to drive folder and go-to scrapper.py add .exe extention in path. Like,
@@ -55,6 +55,13 @@ For python3
 
 ## Output
 You will get json.data file and json formated data on CLI too.
+
+## My approach
+
+I've used selenium and beautiful soup to scrap the data from given url.<br/>
+Also i am using chrome-driver for automation. any other can be used to perform the task.<br/>
+Then simply saved it to dictonary and process according to given file<br/>
+It will take input file as argument with symbols and giv detailed json output.<br/>
 
 ## Screenshots
 <img src="https://github.com/codestromer/web-scrapper/blob/master/Screenshot/1.jpg" width="400">
