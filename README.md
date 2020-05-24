@@ -9,9 +9,9 @@ Web Scraping on [barchat.com](https://www.barchart.com/stocks/quotes/GOOG/compet
 ### Step-1:
 Install all required libraries using following command.<br/>
 For python2<br/>
-```pip install -r requierments.txt```<br/>
+```pip install -r requirements.txt```<br/>
 For python3<br/>
-```pip3 install -r requierments.txt```<br/>
+```pip3 install -r requirements.txt```<br/>
 
 ### Step-2:
 Download chrome-driver from [here](https://chromedriver.storage.googleapis.com/index.html?path=83.0.4103.39/)<br/>
