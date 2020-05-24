@@ -14,7 +14,7 @@ For python3<br/>
 ```pip3 install -r requirements.txt```<br/>
 
 ### Step-2:
-Download chrome-driver from [here](https://chromedriver.storage.googleapis.com/index.html?path=83.0.4103.39/)<br/>
+Download chrome-driver v83 from [here](https://chromedriver.storage.googleapis.com/index.html?path=83.0.4103.39/)<br/>
 (Although chrome-driver is already is in a repository(For Linux))
 
 If you are using windows to perform the task.<br/>
@@ -52,3 +52,17 @@ For python3
 ```bash
  python3 scrapper.py -i input.txt
 ```
+
+## Output
+You will get json.data file and json formated data on CLI too.
+
+## Screenshots
+<img src="https://github.com/codestromer/web-scrapper/blob/master/Screenshot/1.jpg" width="400">
+
+<img src="https://github.com/codestromer/web-scrapper/blob/master/Screenshot/2.jpg" width="400">
+
+<img src="https://github.com/codestromer/web-scrapper/blob/master/Screenshot/3.jpg" width="400">
+
+<img src="https://github.com/codestromer/web-scrapper/blob/master/Screenshot/4.jpg" width="400">
+
+<img src="https://github.com/codestromer/web-scrapper/blob/master/Screenshot/5.jpg" width="400">
