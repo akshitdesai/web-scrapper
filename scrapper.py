@@ -24,7 +24,7 @@ def fetch_Competitors_Data():
     and save it to dictnary and return 
 
     '''
-    browser = webdriver.Chrome(chromepath)
+    browser = webdriver.Chrome(chromedriver_path)
     browser.get(url_to_scrap)
 
     # Browser need to be fully loaded
